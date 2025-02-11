@@ -36,9 +36,9 @@ section {
 /* Stylings */
 
 header {
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  left: 0; */
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -79,7 +79,7 @@ nav ul li a:hover {
 
 .home {
   font-size: 1.3rem;
-  margin-top: -5rem;
+  /* margin-top: -5rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,6 +129,11 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.description span {
+  color: var(--clr-secondary-400);
+  font-weight: var(--fw-semi-bold);
+}
+
 .home__button {
   margin-top: 1rem;
   display: flex;
@@ -174,6 +179,18 @@ nav ul li a:hover {
   gap: 1.5rem;
 }
 
+.home__social-links a {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home__social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
 .home__social-links img {
   width: 1.8rem;
   cursor: pointer;
@@ -183,6 +200,10 @@ nav ul li a:hover {
 /* END OF HOME SECTION */
 
 /* ABOUT SECTION */
+
+.container {
+  display: flex;
+}
 
 .about {
   font-size: 1.15rem;
@@ -199,10 +220,12 @@ nav ul li a:hover {
 
 .about__container h2 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about__container h3 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about__span {
@@ -254,10 +277,6 @@ nav ul li a:hover {
   margin-bottom: 1.5rem;
 }
 
-.container {
-  display: flex;
-}
-
 .experiences__role {
   color: var(--clr-secondary-400);
   font-size: 1.2rem;
@@ -266,9 +285,99 @@ nav ul li a:hover {
 
 .experiences__date-range {
   color: hsl(0, 0%, 45%);
+  margin-bottom: 1rem;
 }
 
 /* END OF ABOUT SECTION */
+
+/* PROJECTS SECTION */
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects h2 {
+  margin-bottom: 1rem;
+  color: var(--clr-secondary-400);
+}
+
+.projects__container {
+  display: flex;
+  gap: 3rem;
+}
+
+.project__card {
+  padding: 1rem 2rem;
+  background-color: var(--clr-neutral-800);
+  box-shadow: 6px 6px 15px var(--clr-neutral-700);
+  width: 50%;
+  max-width: 640px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project__card h3 {
+  color: var(--clr-secondary-400);
+}
+
+.project__card img {
+  max-height: 300px;
+}
+
+.project__button {
+  border-radius: 10px;
+  border: none;
+  color: var(--clr-primary-200);
+  background-color: var(--clr-neutral-700);
+  padding: 0.4rem 0.7rem;
+  font-weight: var(--fw-semi-bold);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: center;
+}
+
+.project__button:hover {
+  background-color: var(--clr-secondary-400);
+  color: var(--clr-neutral-700);
+  transform: scale(1.05);
+}
+
+/* END OF PROJECTS SECTION */
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+}
+
+.footer__social-links a {
+  margin: 0 15px;
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+
+.footer__social-links a:hover {
+  text-decoration: underline;
+  color: var(--clr-secondary-400);
+}
+
+.footer span {
+  color: var(--clr-secondary-400);
+}
+
+/* END OF FOOTER SECTION */
 
 .burger-menu {
   display: none;
@@ -334,6 +443,23 @@ nav ul li a:hover {
 
   .about img {
     max-width: 300px;
+  }
+
+  .projects__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about {
+    margin-top: -8rem;
+    margin-bottom: 5rem;
+  }
+
+  .projects {
+    margin-bottom: 3rem;
   }
 }
 
