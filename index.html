@@ -26,7 +26,7 @@
 
   <header>
     <div class="logo">
-      <img src="./assets/images/web-logo-64x64.png" alt="Site Logo">
+      <a href="./index.html"><img src="./assets/images/web-logo-64x64.png" alt="Site Logo"></a>
     </div>
 
     <button class="burger-menu" aria-label="Toggle navigation">
@@ -37,14 +37,16 @@
       <ul>
         <li><a href="#home">/home</a></li>
         <li><a href="#about">/about</a></li>
-        <li><a href="#contact">/contact</a></li>
+        <li><a href="#projects">/projects</a></li>
       </ul>
     </nav>
   </header>
 
+  <div id="particles-js"></div>
+
   <main>
 
-    <section class="home">
+    <section class="home" id="home">
       <h1>Hi, I'm Jonathan</h1>
 
       <div class="role-container">
@@ -52,12 +54,15 @@
         <span class="text sec-text">developer</span>
       </div>
 
-      <p>I'm Jonathan Djoko, a web developer passionate about building efficient, user-friendly, and impactful digital
+      <p class="description">I'm Jonathan Djoko, a developer passionate about building efficient, user-friendly, and
+        impactful digital
         experiences. I specialize in creating seamless applications that enhance usability, performance, and
         accessibility.</p>
       <div class="home__button">
-        <button><a href="./assets/downloads/Jonathan Djoko_CV.pdf" target="_blank">Download CV</a></button>
-        <button><a href="">Contact Me</a></button>
+        <button><a href="./assets/downloads/Jonathan Djoko_CV.pdf" target="_blank">Download CV</a><img
+            src="./assets/images/download-icon.svg" alt="download-icon"></button>
+        <button><a href="mailto:jonathandjoko28@gmail.com">Contact Me</a><img src="./assets/images/email-icon.svg"
+            alt="mail-icon"></button>
       </div>
       <div class="home__social-links">
         <a href="https://www.Github.com/Girdion" target="_blank"><img src="./assets/images/github-icon.svg"
@@ -69,9 +74,48 @@
       </div>
     </section>
 
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about__container">
+          <h2>About</h2>
+          <p class="about__description">I'm Jonathan Djoko, a fifth-semester Computer Science student with a passion
+            for developing websites, especially in <span class="about__span">front-end</span> development. I love
+            crafting user-friendly,
+            visually
+            appealing, and responsive web experiences that bring ideas to life.</p>
+          <h3>Technologies</h3>
+          <div class="about__skills">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>ASP.NET Core</li>
+              <li>and many more to come...</li>
+            </ul>
+          </div>
+          <h3>Experiences</h3>
+
+          <h4 class="experiences__place">Bina Nusantara University</h4>
+          <p class="experiences__role"><strong>Student</strong></p>
+          <p class="experiences__date-range">Sep 2022 - Aug 2026 (Expected)</p>
+
+          <h4 class="experiences__place">PT. Asuransi Astra Buana</h4>
+          <p class="experiences__role"><strong>Intern</strong></p>
+          <p class="experiences__date-range">March 2025 - March 2026</p>
+
+        </div>
+
+        <div class="about__image-container">
+          <img src="./assets/images/profile-picture.JPG" alt="profile picture">
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./assets/js/app.js"></script>
 </body>
 
