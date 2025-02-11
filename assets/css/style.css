@@ -328,7 +328,10 @@ nav ul li a:hover {
 }
 
 .project__card img {
-  max-height: 300px;
+  width: 100%;
+  height: 368px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .project__button {
@@ -460,6 +463,7 @@ nav ul li a:hover {
 
   .projects {
     margin-bottom: 3rem;
+    font-size: 0.8rem;
   }
 }
 
