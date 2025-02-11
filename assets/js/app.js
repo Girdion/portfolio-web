@@ -33,7 +33,7 @@ navLinks.forEach((link) => {
 
 particlesJS("particles-js", {
   particles: {
-    number: { value: 50, density: { enable: true, value_area: 1000 } },
+    number: { value: 100, density: { enable: true, value_area: 1000 } },
     color: { value: "#b9ff00" },
     shape: { type: "circle" },
     opacity: { value: 0.3, random: true },
@@ -41,7 +41,7 @@ particlesJS("particles-js", {
     move: { speed: 0.6, direction: "none", random: true, out_mode: "out" },
     line_linked: {
       enable: true,
-      distance: 150,
+      distance: 160,
       color: "#b9ff00",
       opacity: 0.5,
       width: 0.8,

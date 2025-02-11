@@ -43,8 +43,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 10rem;
-  z-index: 100;
+  padding: 1rem 3rem;
+  z-index: 1100;
+  background-color: var(--clr-neutral-900);
 }
 
 .logo img {
@@ -486,6 +487,11 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+  }
+
+  .project__card {
+    width: 100%;
+    max-width: 280px;
   }
 
   .about {
