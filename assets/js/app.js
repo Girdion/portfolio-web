@@ -33,7 +33,7 @@ navLinks.forEach((link) => {
 
 particlesJS("particles-js", {
   particles: {
-    number: { value: 100, density: { enable: true, value_area: 1000 } },
+    number: { value: 80, density: { enable: true, value_area: 1000 } },
     color: { value: "#b9ff00" },
     shape: { type: "circle" },
     opacity: { value: 0.3, random: true },

@@ -30,6 +30,7 @@ body {
 }
 
 section {
+  padding-top: 90px;
   min-height: 100vh;
 }
 
@@ -85,6 +86,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .role-container .text {
@@ -314,7 +316,7 @@ nav ul li a:hover {
   background-color: var(--clr-neutral-800);
   box-shadow: 6px 6px 15px var(--clr-neutral-700);
   width: 50%;
-  max-width: 640px;
+  max-width: 580px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
