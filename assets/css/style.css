@@ -433,9 +433,9 @@ nav ul li a:hover {
 
   nav {
     position: fixed;
-    top: 0;
+    right: 0;
     left: 0;
-    width: 100vw;
+    width: auto;
     height: 100vh;
     background: #222;
     display: flex;
