@@ -18,6 +18,7 @@
 /* General Stylings */
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
