@@ -301,7 +301,6 @@ nav ul li a:hover {
 
 .projects h2 {
   margin-bottom: 1rem;
-  color: var(--clr-secondary-400);
 }
 
 .projects__container {
@@ -399,39 +398,47 @@ nav ul li a:hover {
 
   .burger-menu {
     display: block;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above other elements */
   }
 
   nav {
-    position: absolute;
-    top: 80px;
+    position: fixed; /* Make it cover the entire viewport */
+    top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
     background: #222;
-    overflow: hidden;
+    display: flex;
     flex-direction: column;
-    padding: 0;
-    max-height: 0;
-    transition: max-height 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
   }
 
   nav ul {
     flex-direction: column;
     padding: 0;
-    gap: 0rem;
+    gap: 1rem;
+    text-align: center;
   }
 
   nav ul li {
-    border-bottom: 1px solid var(--clr-neutral-700);
+    border-bottom: none;
   }
 
   nav ul li a {
     display: block;
+    font-size: 1.5rem;
+    color: white;
     padding: 1rem;
-    text-align: center;
   }
 
+  /* Show full-screen menu when active */
   nav.active {
-    max-height: 500px;
+    transform: translateY(0);
   }
 
   .home {
@@ -464,6 +471,10 @@ nav ul li a:hover {
   .projects {
     margin-bottom: 3rem;
     font-size: 0.8rem;
+  }
+
+  .projects img {
+    max-height: 100px;
   }
 }
 
