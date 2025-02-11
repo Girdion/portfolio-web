@@ -14,11 +14,21 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 12000);
 
-const roleContainer = document.querySelector(".role-container");
+const burgerMenu = document.querySelector(".burger-menu");
+const nav = document.querySelector("nav");
+const navLinks = document.querySelectorAll(".nav-menu a");
+const navMenu = document.querySelector(".nav-menu");
 
-document.querySelector(".burger-menu").addEventListener("click", function () {
-  const nav = document.querySelector("nav");
+burgerMenu.addEventListener("click", () => {
+  burgerMenu.classList.toggle("open");
   nav.classList.toggle("active");
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    burgerMenu.classList.remove("open");
+    navMenu.classList.remove("active");
+  });
 });
 
 particlesJS("particles-js", {
